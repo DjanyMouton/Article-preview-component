@@ -1,0 +1,1 @@
+let bonjour: string = "bonjour";
