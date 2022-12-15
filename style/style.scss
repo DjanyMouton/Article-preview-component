@@ -50,7 +50,7 @@ body{
         }
     }
     .user{
-        display: none;
+        display: flex;
         margin-top: 2.3rem;
         // display: flex;
         height: 55px;
@@ -80,10 +80,10 @@ body{
         #share__image{
             display: flex;
             align-items: center;
-            margin-left: 3.2rem;
+            margin-left: 3rem;
             img{
                 border-radius: 50%;
-                background-color: rgb(244, 244, 244);
+                background-color: rgb(227, 227, 227);
                 padding: 10px;
                 height: 1rem;
                 cursor: pointer;
@@ -91,14 +91,14 @@ body{
         }
     }
     .network{
-        display: flex;
+        display: none;  /*LINK to change*/
         align-items: center;
         position: absolute;
         bottom: 0;
         left: 0;
-        height: 70px;
+        height: 97px;
         width: 350px;
-        background: rgb(14, 25, 38);
+        background: rgb(23, 40, 60);
         border-bottom-left-radius:10px;
         border-bottom-right-radius:10px;
         p{
@@ -109,22 +109,27 @@ body{
         }
         #network__link{
             display: flex;
-            width: 150px;
+            width: 125px;
             justify-content: space-evenly;
+            align-items: center;
             #network__image{
                 img{
                     cursor: pointer;
-                    height: 2rem;
+                    padding: 10px;
+                    height: 1rem;   
                 }
             }
         }
-        .share__link{
-            margin-left: 2rem;
-            padding: 10px;
-            border-radius: 50%;
-            color: white;
-            background-color: rgb(235, 235, 235);
-            cursor: pointer;
+        #share__link{
+            user-select: none;
+            margin-left: 3.5rem;
+            img{
+                border-radius: 50%;
+                background-color: rgb(244, 244, 244);
+                padding: 10px;
+                height: 1rem;
+                cursor: pointer;
+            }
         }
     }
 }
