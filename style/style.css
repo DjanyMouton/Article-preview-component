@@ -1,6 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* GENERAL */
+* {
+  margin: 0;
+}
+
 body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   margin: 0;
   box-sizing: border-box;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+}
+#container #image {
+  width: 375px;
+  height: 200px;
+}
+#container #image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 375px;
+  height: 200px;
+}
+#container #text__container {
+  padding: 30px 30px;
+}
+#container #text__container h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+#container #text__container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+#container .user {
+  display: flex;
+  height: 100px;
+  background-color: rgb(232, 208, 255);
+  position: absolute;
+  bottom: 0;
+}
+#container .user img {
+  height: 4rem;
+  border-radius: 50%;
+}
+#container .network {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
