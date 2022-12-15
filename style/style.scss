@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /* GENERAL */
+
 *{
     margin: 0;
 }
 body{
-    background-color: bisque;
+    background-color: rgb(189, 189, 189);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,27 +20,27 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 375px;
-    height: 600px;
+    width: 350px;
+    height: 530px;
     background-color: white;
     border-radius: 10px;
     #image{
-        width: 375px;
+        width: 350px;
         height: 200px;
-        // background:url(/images/drawers.jpg);
-        // background-size: cover;
         img{
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            width: 375px;
+            width: 350px;
             height: 200px;
         }
     }
     #text__container{
-        padding: 30px 30px;
+        padding: 2.7rem 2rem;
         h1{
             font-family: 'Open Sans', sans-serif;
-            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+            color: rgb(37, 37, 37);
+            font-size: 1rem;
             margin-bottom: 20px;
         }
         p{
@@ -49,17 +50,82 @@ body{
         }
     }
     .user{
-        display: flex;
-        height: 100px;
-        background-color: rgb(232, 208, 255);
-        position: absolute;
-        bottom:0;
-        img{
-            height: 4rem;
-            border-radius: 50%;
+        display: none;
+        margin-top: 2.3rem;
+        // display: flex;
+        height: 55px;
+        width: 300px;
+        // background-color: rgb(232, 208, 255);
+        #user__image{
+            display: flex;
+            align-items: center;
+            img{
+                height: 3.2rem;
+                border-radius: 50%;
+            }
+        }
+        #user__name{
+            margin:auto 1rem;
+            display: flex;
+            flex-direction: column;
+            #name{
+                font-family: 'Open Sans', sans-serif;
+            }
+            #date{
+                font-family: 'Roboto', sans-serif;
+                color: rgb(166, 166, 166);
+            }
+            
+        }
+        #share__image{
+            display: flex;
+            align-items: center;
+            margin-left: 3.2rem;
+            img{
+                border-radius: 50%;
+                background-color: rgb(244, 244, 244);
+                padding: 10px;
+                height: 1rem;
+                cursor: pointer;
+            }
         }
     }
     .network{
-        display: none;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 350px;
+        background: rgb(14, 25, 38);
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        p{
+            margin-left: 3rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        #network__link{
+            display: flex;
+            width: 150px;
+            justify-content: space-evenly;
+            #network__image{
+                img{
+                    cursor: pointer;
+                    height: 2rem;
+                }
+            }
+        }
+        .share__link{
+            margin-left: 2rem;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            background-color: rgb(235, 235, 235);
+            cursor: pointer;
+        }
     }
 }
+
